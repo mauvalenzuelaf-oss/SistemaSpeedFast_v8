@@ -721,7 +721,15 @@ El proyecto incluye el conector JDBC en:
 lib/mysql-connector-j-26.7.0.jar
 ```
 
-En IntelliJ debe encontrarse agregado mediante:
+La dependencia se encuentra registrada en:
+
+```text
+SistemaSpeedFast_v8.iml
+```
+
+por lo que IntelliJ IDEA debería reconocerla automáticamente al abrir el proyecto.
+
+Puede verificarse mediante:
 
 ```text
 File
@@ -730,11 +738,14 @@ File
 → Dependencies
 ```
 
-con:
+donde debe aparecer:
 
 ```text
+mysql-connector-j-26.7.0.jar
 Scope: Compile
 ```
+
+Si IntelliJ IDEA no reconoce automáticamente la dependencia, puede agregarse manualmente seleccionando el archivo ubicado en la carpeta `lib`.
 
 ---
 
